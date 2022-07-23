@@ -24,8 +24,9 @@ app.use('/api/posts', postRoute);
 
 app.use('/api/user', authRoute);
   
-
-
+app.get('/', (req, res) => {
+    res.send("welcome")
+})
 
 
 
